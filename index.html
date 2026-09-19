@@ -111,6 +111,17 @@ body{background:var(--ui);color:var(--ink)}
 .cover .cover-bottom{display:flex;gap:2cqw;font-size:1.3cqw;line-height:1.6}
 .cover-bottom span{white-space:nowrap}.cover-bottom strong{font-weight:600;margin-left:.45em}
 @media(max-width:640px){.cover .cover-bottom{font-size:12px;gap:20px}}
+
+/* Fill desktop viewports while retaining the presentation ratio. */
+.sr-only{top:0;left:0}
+@media screen and (min-width:641px){
+ :root{--stage-width:min(calc(100vw - 24px),calc((100dvh - 90px)*16/9))}
+ .app{padding:12px;gap:8px}
+ .stage{flex-shrink:0}
+ .progress{height:10px;flex-shrink:0}
+ .controls{height:40px;flex-shrink:0}
+ .nav{min-height:40px;padding:8px 20px}
+}
 </style>
 </head>
 <body>
