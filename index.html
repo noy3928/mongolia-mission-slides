@@ -107,6 +107,10 @@ body{background:var(--ui);color:var(--ink)}
  .cover:after,.ending:after{background-size:240% 160%;background-position:85% 60%;mix-blend-mode:normal;mask-image:linear-gradient(to bottom,transparent,#000 15%,#000 78%,transparent);opacity:.95}
 }
 
+
+.cover .cover-bottom{display:flex;gap:2cqw;font-size:1.3cqw;line-height:1.6}
+.cover-bottom span{white-space:nowrap}.cover-bottom strong{font-weight:600;margin-left:.45em}
+@media(max-width:640px){.cover .cover-bottom{font-size:12px;gap:20px}}
 </style>
 </head>
 <body>
@@ -114,7 +118,7 @@ body{background:var(--ui);color:var(--ink)}
  <header class="toolbar" hidden><div class="brand">몽골선교 스터디 <span>선교 이후의 연결과 책임</span></div><div class="utilities"><button class="quiet" id="notes-toggle" aria-controls="notes-panel" aria-expanded="false">발표 메모</button><button class="quiet" id="fullscreen" aria-label="전체 화면 전환">전체 화면 ⛶</button></div></header>
  <main class="stage" aria-label="몽골선교 발표 슬라이드" aria-roledescription="슬라이드 쇼">
   <section class="slide cover" data-title="선교 이후의 연결과 책임" data-part="도입" aria-label="1 / 10: 선교 이후의 연결과 책임">
-   <div class="eyebrow">몽골선교 스터디</div><h1>선교 이후의<br><span>연결</span>과 책임</h1><p class="sub">몽골에서 시작된 관계,<br>돌아온 뒤에도 계속되는 선교</p><div class="cover-bottom">함께 생각할 두 가지 &nbsp; / &nbsp; 관계와 책임</div>
+   <div class="eyebrow">몽골선교 스터디</div><h1>선교 이후의<br><span>연결</span>과 책임</h1><p class="sub">몽골에서 시작된 관계,<br>돌아온 뒤에도 계속되는 선교</p><div class="cover-bottom"><span>자료 준비 <strong>홍지유</strong></span><span>발표 <strong>노예찬</strong></span></div>
    <span class="folio">01 / 10</span>
   </section>
   <section class="slide dark" data-title="돌아온 뒤에도 선교는 계속될까?" data-part="도입" aria-label="2 / 10: 돌아온 뒤에도 선교는 계속될까?" hidden>
